@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --primaryTextColor: #232e35;
+  --secondaryTextColor: #656d72;
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9;
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #fbfbfb;
+  --thirdBackgroundColor: #f5f3fe;
+  --primaryIconColor: #ff8800;
+  --primaryIconColorHover: #5d51e8;
+  --sectionPadding: 6rem 0;
+  --itemBorderRadius: 0.7rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--primaryIconColor);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5), 0px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .main-container {
+    width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .main-container {
+      width: 90%;
+    }
+  }
+
+  /* --- Logo and Navigation Menu --- */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .logo a {
+    color: var(--primaryTextColor);
+  }
+  
+  /* Navigation Menu */
+  nav ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li a {
+    color: var(--primaryTextColor);
+  }
+
+  #imgbg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
