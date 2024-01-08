@@ -82,6 +82,7 @@ body {
 
 /* Judul 3 */
 #judul {
+    padding-top: 100px;
   justify-content: center;
   display: flex;
 }
@@ -208,3 +209,7 @@ body {
       margin-bottom: 40px;
     }
   }
+
+  .portfolio.selected {
+    border-color: #ff8800;
+}

@@ -4,101 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style2.css">
-    <script src="/"></script>
+    <script src="js/service.js"></script>
     <title>Our Service</title>
 </head>
 <body>
-    <header>
-        <div class="main-container">
-            <div class="nav">
-                <div class="logo">
-                    <a href="index.html">Abraham Barber Services</a>
+  <!-- Service List -->
+  <div id="judul">
+    <div><h1>My</h1></div>
+    <div id="judul-biru"><h1 id="judulwarna">Services</h1></div>
+</div>
+
+<!-- Portfolios -->
+<section id="portfolios">
+    <div class="portfolios main-container">
+        <!-- Portfolio 1 -->
+        <div class="portfolio" onclick="togglePortfolioSelection(this, 'portfolio1')">
+            <div class="portfolio-cover">
+                <img src="./images/cut.jpg" alt="Portfolio 1">
+            </div>
+            <div class="portfolio-info">
+                <div class="portfolio-title">
+                    <h4>Cutting Hair</h4>
                 </div>
+                <div class="portfolio-tags">
+                    <div>30 PLN Per Session</div>
+                </div>
+                <p>
+                   Cut you hair here to get the most beautiful and masculine hair ever
+                </p>
             </div>
         </div>
-    </header>
 
-    <!-- Service List -->
-    <div id="judul">
-        <div><h1>My</h1></div>
-        <div id="judul-biru"><h1 id="judulwarna">Services</h1></div>
+        <!-- Portfolio 2 -->
+        <div class="portfolio" onclick="togglePortfolioSelection(this, 'portfolio2')">
+            <div class="portfolio-cover">
+                <img src="./images/beard.jpg" alt="Portfolio 2">
+            </div>
+            <div class="portfolio-info">
+                <div class="portfolio-title">
+                    <h4>Beard Shaving</h4>
+                </div>
+                <div class="portfolio-tags">
+                    <div>20 PLN Per Session</div>
+                </div>
+                <p>
+                    Shave your beard with our professional
+                </p>
+            </div>
+        </div>
     </div>
-
-    <!-- Portfolios -->
-    <section id="portfolios">
-        <div class="portfolios main-container">
-            <!-- Portfolio 1 -->
-            <div class="portfolio">
-                <div class="portfolio-cover">
-                    <img src="./images/cut.jpg" alt="Portfolio 1">
-                </div>
-                <div class="portfolio-info">
-                    <div class="portfolio-title">
-                        <h4>Tarot Reading</h4>
-                    </div>
-                    <div class="portfolio-tags">
-                        <div>30 PLN Per Session</div>
-                        <div>Choose How Many Sessions</div>
-                        <div>
-                            <select id="tarot-select">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                    </div>
-                    <p>
-                        Read and see the future and the secret you have by the tarot reading
-                    </p>
-                </div>
-            </div>
-
-            <!-- Portfolio 2 -->
-            <div class="portfolio">
-                <div class="portfolio-cover">
-                    <img src="./images/beard.jpg" alt="Portfolio 2">
-                </div>
-                <div class="portfolio-info">
-                    <div class="portfolio-title">
-                        <h4>Consultation of any Magical and Supernatural Problems</h4>
-                    </div>
-                    <div class="portfolio-tags">
-                        <div>20 PLN Per Session</div>
-                        <div>Choose How Many Sessions</div>
-                        <div>
-                            <select id="const-select">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                    </div>
-                    <p>
-                        Consultation with Nishan helps you to know what is actually your spiritual and life problem based on your birth date and your palm pattern
-                    </p>
-                </div>
-            </div>
+    
+    <!-- Buttons -->
+    <div class="button-div">
+        <div class="center-button">
+            <button class="btn" onclick="addToCart()"><h2>Add to Cart</h2></button>
         </div>
-        
-        <!-- Buttons -->
-        <div class="button-div">
-            <div class="center-button">
-                <button class="btn" onclick="Reserve()"><h2>Add to Cart</h2></button>
-            </div>
-            <div class="center-button">
-                <a href="index.html"><button class="btn"><h2>Back Home</h2></button></a>
-            </div>
+        <div class="center-button">
+            <a href="index.html"><button class="btn"><h2>Back Home</h2></button></a>
         </div>
-    </section>
-    <!-- End Portfolios -->
-
-    <!-- ... (remaining code) ... -->
-
+    </div>
+</section>
+<!-- End Portfolios -->
 </body>
 </html>
