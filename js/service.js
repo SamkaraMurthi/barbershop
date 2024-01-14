@@ -14,11 +14,12 @@ var portfolio1 = 0;
         }
 
         function addToCart() {
-            // Use the portfolio variables as needed
+            if(portfolio1 === 0 && portfolio2 ===0){
+                alert("Choose One of the Service");
+            } else{
             console.log('Portfolio 1:', portfolio1);
             console.log('Portfolio 2:', portfolio2);
             
             window.location.href = 'chart.html';
-
-            // You can perform other actions here based on the selected portfolios
+            }
         }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
   --primaryTextColor: #232e35;
@@ -9,7 +9,7 @@
   --secondaryBackgroundColor: #fbfbfb;
   --thirdBackgroundColor: #f5f3fe;
   --primaryIconColor: #ff8800;
-  --primaryIconColorHover: #5d51e8;
+  --primaryIconColorHover: #e634dd;
   --sectionPadding: 6rem 0;
   --itemBorderRadius: 0.7rem;
 }
@@ -27,7 +27,7 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: var(--primaryIconColor);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5), 0px 10px 20px rgba(0, 0, 0, 0.5);
+  
 }
 
 .main-container {
@@ -77,7 +77,7 @@ nav ul li a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lemon", sans-serif;
 }
 
 /* Judul 3 */
@@ -192,7 +192,7 @@ body {
 }
 
 .btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  background-color: var(--primaryIconColorHover);
 }
 
 .button-div {
@@ -213,3 +213,4 @@ body {
   .portfolio.selected {
     border-color: #ff8800;
 }
+
